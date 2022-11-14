@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+.App {
+    height:100%;
+    margin-left:10%;
+  }
+  
+  p,h1,h2,h3 {
+    font-family:"Lato"
+  }
+  
+  footer p {
+    font-size:11px;
+    font-weight:200;
+    color:rgb(203, 221, 237);
+  }
+  footer{
+    background: rgb(69, 89, 107);
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  footer a{
+    color:rgb(203, 221, 237);
+  
+  }
+  footer a:hover{
+    color:white;
+  }
+  .main-page{
+    padding-left:5%;
+  }

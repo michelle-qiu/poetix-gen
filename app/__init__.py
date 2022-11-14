@@ -23,5 +23,6 @@ db = SQLAlchemy(app) #flask-sqlalchemy
 lm = LoginManager()
 lm.setup_app(app)
 lm.login_view = 'login'
-
+from .index import bp as index_bp
+app.register_blueprint(index_bp)
 from app import views, models
