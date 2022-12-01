@@ -7,7 +7,21 @@
 		{{ form.hidden_tag() }}
 	  <div class="form-inline">
 		<p>
+		  {{form.theme.label}}
 		  {{ form.theme }}
+		  <br>
+		  {{form.rhyme.label}}
+		  {{ form.rhyme ()}}
+		  <br>
+		  {{form.theme_lines.label}}
+		  {{ form.theme_lines (size=1)}}
+		  <br>
+		  {{form.k.label}}
+		  {{ form.k (size=4)}}
+		  <br>
+		  {{form.alliteration.label}}
+		  {{ form.alliteration(size=4) }}
+		  <br>
 		  {% for error in form.theme.errors %}
 		  <span style="color: red;">[{{ error }}]</span>
 		  {% endfor %}
